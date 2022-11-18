@@ -93,18 +93,11 @@
 	       optsel=[];
         for ( var i = 0; i < this.selectedOptions.length; i++) {
           optsel.push(this.selectedOptions[i].value);
-		  
-        }
-		
-      })
-	  
+		  }
+		})
 	  document.querySelector('button').addEventListener('click', function(e) {
-	       
-       alert(optsel);
-		  
-     
-		
-      })
+	       alert(optsel.join(', '));
+		  })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     
